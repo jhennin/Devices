@@ -1,0 +1,88 @@
+Exercise Package 3:
+Diode Applications:
+    1. In the following half wave rectification circuit, the AC voltage source is 20cos(400x2πt), the load
+     resistor
+    R1=100(ohms), and D1 is a silicon diode.
+        a. Find the VPeak of the output DC voltage VO and sketch the output wave form.
+        b. Find the average DC voltage of VO.
+        c. Find the maximum forward biased (peak surge) current following through the diode D1.
+        d. Find the peak reverse voltage across the diode D1.
+        e. Find the average DC load current following through R1. What is the power dissipated by
+        R1?
+        f. Does 1N4001 fit this application? Explain.
+
+    2. Use a half wave rectification circuit to produce a 12V DC voltage source with maximum of 500mA of DC current (6W, 12V DC power supply). Find the following specifications for the design:
+        a. What is the required Vm of the AC voltage source? (Tip: consider Vmcos(ωt) is an AC source)
+        b. Find the peak forward surge current.
+        c. Find the peak reverse voltage.
+        d. Can you use 1N4001 for the design? Explain.
+    
+    3. In the following full wave rectification circuit, the AC voltage source is 20cos(800x2πt), the load resistor R1=100(ohms), and D1 through D4 are silicon diodes.
+        a. Find the VPeak of the output DC voltage VO and sketch the output wave form.
+        b. Find the average DC voltage of VO.
+        c. Find the maximum forward biased (peak surge) current following through the diode D1,
+        D2, D3, and D4.
+        d. Find the peak reverse voltage across the diode D1, D2, D3, and D4.
+        e. Find the average DC load current following through R1. What is the power dissipated by
+        R1?
+        f. Does 1N4001 fit this application? Explain.
+    
+    4. Use a full wave rectification circuit to produce a 10W, 12V DC voltage source. Find the following specifications for the design:
+        a. What is the maximum average DC supply current?
+        b. Find the required Vm of the AC voltage source.
+        c. Find the peak forward surge current of each diode.
+        d. Find the peak reverse voltage on each diode.
+        e. Can you use 1N4001 for the design? Explain.
+    
+    
+    5. In the following input voltage limit circuit, D1 and D2 are both 1N4001. R=1KΩ and RL=4KΩ. Find the output voltages Vout for the following listed input voltages:
+        a. Vin=0.5cos(200πt+1)
+        b. Vin=10V
+        c. Vin=−3V
+        d. Vin=2+0.5cos(200πt+1)
+        e. Vin=100V
+        f. What is the limit of input voltages for the protection circuit to work? Explain. 
+
+
+    Zener diode Applications:
+    6. In the following 5V DC voltage regulator circuit in a car to charge devices with a USB connector, D1 is Zener diode with Vz=5V, IZK=0.5mA, IZT=30mA, and IZmax=200mA. R1 is a 36Ω (1.5 Watts) standard resistor.
+        a. Determine the Zener zone maintenance current Imain from the specifications of the diode.
+        b. What is the power rating of the Zener diode D1 according to the given specifications?
+        c. What is the maximum load current (IL) and the maximum power that a device can draw from the regulator while the circuit still maintains the 5V regulated voltage?
+        d. Find the maximum possible current flowing through the Zener diode D1. Does it exceed IZmax?
+        e. Find the power dissipated by resistor R1. Is the power rating sufficient for the resistor?
+        f. Find the power delivered by 12V DC source (car battery).
+        g. What is the percentage of efficiency of the regulator at its maximum load? (PLoad_max/Pdelivered %)
+    
+    
+    7. In the Zener diode regulator circuit above with a 12 Volts DC voltage source, D1 is 1N5239 (check the specification sheet on pilot).
+        a. What is the maximum possible load current that the regulator can provide? (Tip: Consider Izmax value and determine Izmain according to the specifications for 1N5239.)
+        b. Find resistor value (standard resistor list) and power rating for R1 to realize the maximum load current.
+        c. What is the percentage of efficiency of the regulator as the maximum load current is drawn?
+    
+
+    8. A sensor device uses 3V DC voltage and draws 30mA when the device is taking measurement and 2 mA when the device is in idle. According to the request from a customer, the sensor device will be used in situations with different supply voltage from 4.5 volts to 12V. Design a simple Zener diode voltage regulator using 1N5225 (check the specification sheets for details) to provide 3V DC voltage source with the best efficiency.
+        a. The range of values for R1 that will work for the design? Pick a resistor value that provides the best efficiency for the regulator.
+        b. What is the percentage efficiency with your selection of R1 value?
+        c. What is the maximum possible current flowing through D1? Does 1N5225 fits for the
+        design?
+        d. What is the maintenance current of D1 when sensor is taking measurement?
+        e. What is the required power rating of R1?
+
+
+Some answer keys: 1b. Vdc=6.14V
+1c. Ipeak=193mA 2a. Vm=38.4V
+2b. Ipeak=1.57A (at maximum load) 3a. Vpeak=18.6V
+3b. Vdc=11.7V
+3c. 186mA, the same for all
+4b. Vm=20.3V
+4c. Ipeak=1.3A
+5a. 0.4cos(200πt+1) 5e. 0.7V
+6a. 3mA (or other values) 6c. 200mA-3mA=197mA 6d. 194mA
+6f. 2.33W
+6g. .955/2.33=41%
+7a. Izmax-Izmain=47mA (or other values)
+7b. 58Ω
+7c. 71.3%
+8a. Set Imain=3ma, 45Ω≥R1≥58Ω.
+8b. options: Izmax=300mA, reduce Vin_max to 9V, or increase Vin_min to 5V.
