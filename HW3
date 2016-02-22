@@ -2,7 +2,7 @@ Exercise Package 3:
 Diode Applications:
     1. In the following half wave rectification circuit, the AC voltage source is 20cos(400x2πt), the load
      resistor
-    R1=100(ohms), and D1 is a silicon diode.
+    R1=100(Ω), and D1 is a silicon diode.
         a. Find the VPeak of the output DC voltage VO and sketch the output wave form.
         b. Find the average DC voltage of VO.
         c. Find the maximum forward biased (peak surge) current following through the diode D1.
@@ -17,7 +17,7 @@ Diode Applications:
         c. Find the peak reverse voltage.
         d. Can you use 1N4001 for the design? Explain.
     
-    3. In the following full wave rectification circuit, the AC voltage source is 20cos(800x2πt), the load resistor R1=100(ohms), and D1 through D4 are silicon diodes.
+    3. In the following full wave rectification circuit, the AC voltage source is 20cos(800x2πt), the load resistor R1=100(Ω), and D1 through D4 are silicon diodes.
         a. Find the VPeak of the output DC voltage VO and sketch the output wave form.
         b. Find the average DC voltage of VO.
         c. Find the maximum forward biased (peak surge) current following through the diode D1,
