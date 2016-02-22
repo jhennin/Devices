@@ -1,0 +1,70 @@
+Exercise Package 4:
+Bipolar Junction Transistors (BJT):
+	1. Consider a Silicon NPN BJT:
+		a. How many PN junctions in the BJT?
+		b. Which layer of material is the thinnest and what type? Sketch the NPN structure to
+		illustrate it.
+		c. Which layer of a NPN BJT is called Base? Draw the symbol of NPN BJT to illustrate it.
+		d. The reverse saturation current between collector and base, ICBO is typically measured
+		with emitter open. Considering this BJT is operated at 25oC, calculate the ICBO use the model I = T(3+gamma)e(−Eg) with gamma=1. Explain why can you use this model to estimate ICBO?
+		e. The collector current caused by the majority carriers IC=IC_majority=αIE where IE is the
+		emitter current and α=0.99. Based on KCL principal, find IB, as IC=4mA.
+		f. Considering the current caused by the minority carrier in PN junction of CB which is
+		reverse biased in applications, the collector current will have two parts
+		IC=IC_majority+ ICBO= αIE+ ICBO. By substituting IE= IC+IB, it yields
+		𝐼𝐶= 𝛼 𝐼𝐵+𝐼𝐶𝐵𝑂 1−𝛼 1−𝛼
+		where 𝐼𝐶𝐸𝑂 = 𝐼𝐶𝐵𝑂 = (𝛽 + 1)𝐼𝐶𝐵𝑂 is the leakage current flowing to emitter from 1−𝛼
+		collector caused by ICBO. Use the estimated ICBO current found in 1d. and α=0.99, to calculate the estimation of leakage current ICEO which is amplified by 𝛽 = 𝛼 (typically
+		100~200), from the highly temperature sensitive leakage current ICBO. (Note: ICBO is called “Collector Cutoff Current” in the specification sheet of 2N3904 with notation ICEX which is <50nA.)
+		𝑉𝐵𝐸
+		g. Considering the BJT is operated at 25 oC, calculate 𝐼𝐵 = 𝐼𝐶𝐵𝑂 (𝑒𝑛𝑉𝑇 − 1) where ICBO is
+		the leakage current calculated in part 1d., n=2, and VBE=0.65V. (Note: Due to the symmetry of PN junction in BJT, ICBO and IEBO are equal. In the 1N3904 specification sheet, it is IBL which is called “Base Cutoff Current” and <50nA.)
+		h. Following the results from 1d. 1f. and 1g., calculate IC=βIB+ICEO. What is the percentage of leakage current ICEO in the current IC?
+
+
+	2. Use the collector characteristics of a BJT at 25oC shown below to answer the questions:
+		a. What is the power rating of the BJT?
+		b. If it de-rates at 5mW per degree over 25oC, what is the power rate of the BJT at 55 oC?
+		c. Estimate the βac and βdc at operation point “B”, “C”, and (VCE=6V, IC=20mA) respectively.
+		d. Find the maximum limit of IC for VCE=10V at 25oC and 55 oC respectively.
+		e. Find the power dissipated by the BJT and operation point “B”, “C”, and “D” respectively.
+		f. As VCE<0.5V (estimated from characteristics), the BJT is in the saturation region (also
+		known as ohmic region), can you find the estimated resistance value RCE for this BJT?
+		    1−𝛼
+		g. Tip: print out the collector characteristic and use a ruler to help you get a good estimation.
+
+
+	3. Answer
+		a. The condition to measure ICBO (also known as ICEX) is “open emitter” or IB=0. Explain why
+		the following questions base on the specification sheet of 2N3904 (on pilot):
+		the condition VCE=30V and VBE=−3V is the equivalent condition.
+		b. What is the maximum limit of ICBO for 2N3904 at what temperature?
+		c. The power rating of 2N3904 is 625mW at 25oC. What is its power rating at temperature
+		of 40 oC?
+		d. Find the maximum limit of collector-emitter saturation voltage, VCE_sat?
+		e. Find βdc for 2N3904 at IC=10mA.
+		f. Find typical βac (hfe in the specification sheet) for at IC=5mA, VCE=10V, and 25oC (Figure
+		11).
+		g. Estimate the βac at 25oC and 125oC (Figure 15) (in the same test conditions of f.).
+		h. What is the operation range of VCE? (VCE_sat to VCE_max)
+		i. What is the operation range of IC? (ICEO to IC_max)
+
+**********************************************************************************************************
+Some answer keys:
+1d. Is=118pA
+1f. ICEO=12nA
+1g. IB=37μA
+1h. IC=3.6mA where ICEO is only 0.00032%
+2a. It is estimated about 165 to 175mW as 10V*17.5mA or 12.5V*13.5 mA (red lines) etc. 2b. 30oC will cause 150mW in power derate, it is only 15-25mW rating at 55oC
+2c. At “B,” βac= (10.5mA-7.5mA)/10μA=300 and βdc=10.5mA/30μA=350 (blue lines)
+At (VCE=6V, IC=20mA), βac= (20mA-17mA)/10μA=300 and βdc=20mA/60μA=333 (blue lines)
+2d. Due to the power rating, the maximum limit of IC=17.5mA at 25oC and only 2.5mA at 55oC. 2e. At “B,” Pdiss=VCE*IC=8V*10.5mA=84mW. Similarly, at “C” is 2.5V*4mA=10mW and
+at “D” is 17V*8mA=136mW (green line)
+2f. Assume VCE_Sat=0.3V and the corresponding current on the Collector Characteristics is about 17mA.
+The resistor value is 0.3V/17mA=17.6Ω.
+3a. Reversed bias of VBE=−3V establishes a thicker depletion region at the base-emitter PN junction which effectively prevents the ICEO (induced by ICBO) diffuse through to the emitter. Therefore, only current measured at the collector is the current ICBO.
+3b. listed as ICEX (collector cutoff current, also IBL base cutoff current in the same measurement conditions) <50nA
+3c. 550mW
+3d. between 100 to 300.
+3e. 150; 3g. βac=150 at 25oC and βac=150*1.5=235 at 125oC; 3h. 0.2 or 0.3V to 40V; 3i. upto 200mA.
+ 
