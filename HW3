@@ -69,8 +69,9 @@ Diode Applications:
         d. What is the maintenance current of D1 when sensor is taking measurement?
         e. What is the required power rating of R1?
 
-
-Some answer keys: 1b. Vdc=6.14V
+**********************************************************************************************************
+Some answer keys: 
+1b. Vdc=6.14V
 1c. Ipeak=193mA 2a. Vm=38.4V
 2b. Ipeak=1.57A (at maximum load) 3a. Vpeak=18.6V
 3b. Vdc=11.7V
