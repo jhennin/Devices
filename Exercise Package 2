@@ -11,8 +11,8 @@ Semiconductor Materials and Diode v-I relationship:
 	5. For GaAs, the band gap energy level is Eg=?
 	𝑆 2 𝑘𝑇
 	
-	6. Reverse saturation current of a P-N junction is modeled by equation: 𝐼 = 𝑇(3+𝛾)𝑒(−𝐸𝑔) where T
-	is operation temperature in Kelvins, k=1.38x10−23 (J/K) Boltzmann constant, 𝐸𝑔 is the bandgap energy level of a semiconductor material (eV). γ is a modeling constant.
+	6. Reverse saturation current of a P-N junction is modeled by equation: I = T(3+gama)e(−Eg) where T
+	is operation temperature in Kelvins, k=1.38x10−23 (J/K) Boltzmann constant, Eg is the bandgap energy level of a semiconductor material (eV). γ is a modeling constant.
 		a. Given a silicon diode with typical reverse saturation current IS=100pA at 25oC, find the value of modeling constant γ.
 		b. Find the reverse saturation current IS of the above diode at operation temperatures −2oC and 55oC respectively.
 		c. Find the corresponding (operation temperatures in −2oC, 25oC, and 55oC) forward biased current using Shockley equation: 𝐼𝐷 = 𝐼𝑆(𝑒𝑉𝐷/𝑛𝑉𝑇 -1) where n=2, VD=0.7V and thermal voltage VT=kT/q (q=1.6x10−19 (C) is elementary charge unit).
@@ -32,3 +32,11 @@ Semiconductor Materials and Diode v-I relationship:
 	10. Find the reverse saturation currents of 1N4004 when reverse biased at 160V at operation
 	temperatures of 25oC, 100oC, and 125oC respectively.
 	11. What is the maximum forward current rating if the diode 1N4001 is operated at 100oC?
+
+********************************************************************************************************
+	Some answer keys:
+	6a) modeling constant γ=0.9409
+	6b) 1.01pA and 7nA at the operation temperatures −2oC and 55oC respectively 6c) ID=3.2μA, 82μA, and 1.7mA at −2oC, 25oC, and 55oC respectively (VD=0.7V)
+	6d) rd=14.5KΩ, 626.7Ω, and 34.3Ω at −2oC, 25oC, and 55oC respectively (VD=0.7V)
+	7) rd=2.59Ω, 1.73Ω, and 0.26Ω for ID=10mA, 15mA and 100mA respectively (T=27 oC)
+	8) VD=1.12V, 0.89V, and 0.75V at −20oC, 27oC, and 55oC respectively for a constant ID=5mA.
