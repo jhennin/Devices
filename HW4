@@ -12,12 +12,12 @@ Bipolar Junction Transistors (BJT):
 		f. Considering the current caused by the minority carrier in PN junction of CB which is
 		reverse biased in applications, the collector current will have two parts
 		IC=IC_majority+ ICBO= αIE+ ICBO. By substituting IE= IC+IB, it yields
-		𝐼𝐶= 𝛼 𝐼𝐵+𝐼𝐶𝐵𝑂 1−𝛼 1−𝛼
-		where 𝐼𝐶𝐸𝑂 = 𝐼𝐶𝐵𝑂 = (𝛽 + 1)𝐼𝐶𝐵𝑂 is the leakage current flowing to emitter from 1−𝛼
-		collector caused by ICBO. Use the estimated ICBO current found in 1d. and α=0.99, to calculate the estimation of leakage current ICEO which is amplified by 𝛽 = 𝛼 (typically
+		IC= appha IB + ICBO 1−alpha 1 - alpha
+		where ICEO = ICBO = (beta + 1)ICBO is the leakage current flowing to emitter from 1−alpha
+		collector caused by ICBO. Use the estimated ICBO current found in 1d. and alpha=0.99, to calculate the estimation of leakage current ICEO which is amplified by beta = alpha (typically
 		100~200), from the highly temperature sensitive leakage current ICBO. (Note: ICBO is called “Collector Cutoff Current” in the specification sheet of 2N3904 with notation ICEX which is <50nA.)
-		𝑉𝐵𝐸
-		g. Considering the BJT is operated at 25 oC, calculate 𝐼𝐵 = 𝐼𝐶𝐵𝑂 (𝑒𝑛𝑉𝑇 − 1) where ICBO is
+		VBE
+		g. Considering the BJT is operated at 25 oC, calculate IB = ICBO (enVT − 1) where ICBO is
 		the leakage current calculated in part 1d., n=2, and VBE=0.65V. (Note: Due to the symmetry of PN junction in BJT, ICBO and IEBO are equal. In the 1N3904 specification sheet, it is IBL which is called “Base Cutoff Current” and <50nA.)
 		h. Following the results from 1d. 1f. and 1g., calculate IC=βIB+ICEO. What is the percentage of leakage current ICEO in the current IC?
 
@@ -30,7 +30,7 @@ Bipolar Junction Transistors (BJT):
 		e. Find the power dissipated by the BJT and operation point “B”, “C”, and “D” respectively.
 		f. As VCE<0.5V (estimated from characteristics), the BJT is in the saturation region (also
 		known as ohmic region), can you find the estimated resistance value RCE for this BJT?
-		    1−𝛼
+		    1−alpha
 		g. Tip: print out the collector characteristic and use a ruler to help you get a good estimation.
 
 
