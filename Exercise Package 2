@@ -9,13 +9,12 @@ Semiconductor Materials and Diode v-I relationship:
 	4. What is the band gap energy level of Si crystal?
 	
 	5. For GaAs, the band gap energy level is Eg=?
-	𝑆 2 𝑘𝑇
 	
 	6. Reverse saturation current of a P-N junction is modeled by equation: I = T(3+gama)e(−Eg) where T
 	is operation temperature in Kelvins, k=1.38x10−23 (J/K) Boltzmann constant, Eg is the bandgap energy level of a semiconductor material (eV). γ is a modeling constant.
 		a. Given a silicon diode with typical reverse saturation current IS=100pA at 25oC, find the value of modeling constant γ.
 		b. Find the reverse saturation current IS of the above diode at operation temperatures −2oC and 55oC respectively.
-		c. Find the corresponding (operation temperatures in −2oC, 25oC, and 55oC) forward biased current using Shockley equation: 𝐼𝐷 = 𝐼𝑆(𝑒𝑉𝐷/𝑛𝑉𝑇 -1) where n=2, VD=0.7V and thermal voltage VT=kT/q (q=1.6x10−19 (C) is elementary charge unit).
+		c. Find the corresponding (operation temperatures in −2oC, 25oC, and 55oC) forward biased current using Shockley equation: ID = IS(eVD/nVT -1) where n=2, VD=0.7V and thermal voltage VT=kT/q (q=1.6x10−19 (C) is elementary charge unit).
 		d. Estimate the dynamic resistor values of a forward biased, VD=0.7V, silicon diode at following operation temperatures (−2oC, 25oC, and 55oC), rd=dVD/dID≈nVT/ID for n=2.
 		e. Using the above results to explain “negative temperature coefficient” of semiconductor.
 	
