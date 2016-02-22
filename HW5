@@ -1,0 +1,88 @@
+Exercise Package 5: BJT biasing:
+  1. Given the following BJT common emitter inverted voltage amplification circuit with emitter bias where RB=510KΩ, RC=2.7KΩ, RE=1KΩ, β=100, and VCC=15V.
+    a. Find the quiescent operation values: ICQ, VCEQ, and power dissipation PCQ. Sketch the load line with IBQ curve and quiescent point indicated.
+    b. Find the quiescent value of VCQ and the maximum DC voltage swing of VC (up and down) from VCQ. (Note: Consider ICBO=20nA and VCE_Sat=0.2V)
+    c. Repeat a. with beta value increase by 20%. What is the percentage change of quiescent points: ICQ and VCEQ? Add the new quiescent point on to the load line sketch in part a. and comment on the display.
+    d. Show the maximum DC voltage swing of VC (up and down) from VCQ with the increased beta value. (Note: Consider ICBO=20nA and VCE_Sat=0.2V)
+  
+
+  2. Design the above emitter bias circuit with the following specifics: β=100, VCC=15V, ICQ=1.5mA, VCEQ=8.5V, and VC need to swing up at least 2V from VCQ.
+    a. Find the resistor values (in standard resistor values): RB, RC, and RE in the above circuit.
+    b. Verify the specifics with your selected standard resistor values. Sketch the load line with
+    IBQ curve and quiescent point indicated.
+    c. What is the maximum DC voltage swing (up and down) of VC from VCQ base on your
+    design? (Note: Consider ICBO=20nA and VCE_Sat=0.2V)
+
+
+  3. Given the following voltage-divider bias circuit with RC=2.7KΩ, RE=1KΩ, β=100, ICQ=2mA, and
+  VCC=15V.
+    a. Calculate expected base voltage VB.
+    b. Consider R2=9.1KΩ (10R2≤βRE), select R1 (voltage divider) such that the VB equal to the
+    expected value.
+    c. Find the Thevenin equivalent circuit from the point view of BJT at point “a” and ground.
+    d. Considering that the load resistance from point “b” to ground is dominated by βRE, find the base voltage VB_load from the Thevenin equivalent circuit that you found in c with the load resistor βRE. What is the percentage of difference (VB_load− VB)/ VB %?
+    e. Now considering that the current flow through the voltage divider (R1 and R2) Id=250 μA (≥10IB), find the resistor values R1 and R2 (using the standard resistor values) to realize expected base voltage VB.
+    f. Find the Tevenin equivalent circuit with the new resistor values and the base voltage VB_load with load resistor βRE. What is the percentage of difference (VB_load− VB)/ VB %?
+    g. Comment and compare the results from d. and f.
+
+
+  4. Given the following BJT common emitter inverted voltage amplification circuit with voltage- divider bias where R1=51KΩ, R2=10KΩ, RC=3.6KΩ, RE=1.2KΩ, β=100, and VCC=15V.
+    a. Find the quiescent operation values: ICQ, VCEQ, and power dissipation PCQ. Sketch the load line with IBQ curve and quiescent point indicated.
+    b. Find the quiescent value of VCQ and the maximum DC voltage swing of VC (up and down) from VCQ.
+    c. Repeat a. with beta value increase by 20%. What is the change of quiescent points: ICQ and VCEQ? Why? Comment on your finding.
+      
+
+5. Design the above voltage divider bias circuit with the following specifics: β=100, VCC=15V, ICQ=3mA, VCEQ=4.5V, and VC need to swing up at least 4V from VCQ.
+    a. Find the resistor values (in standard resistor values): R1, R2, RC, and RE in the above circuit.
+    b. Verify the specifics with your selected standard resistor values. Sketch the load line with IBQ curve and quiescent point indicated.
+    c. What is the maximum DC voltage swing (up and down) of VC from VCQ base on your design?
+
+
+6. Given the following BJT emitter follower circuit with voltage-divider bias where R1=15KΩ, R2=15KΩ, RE=2KΩ, β=100, and VCC=15V.
+    a. Find the quiescent operation values: ICQ, VCEQ, and power dissipation PCQ. Sketch the load line with IBQ curve and quiescent point indicated.
+    b. Find the quiescent value of VEQ and the maximum DC voltage swing of VE (up and down) from VEQ.
+
+
+7. Design the above voltage divider biased emitter follower with the following specifics: β=100, VCC=15V, ICQ=2mA and VE need to swing down at least 4V from VEO.
+    a. Find the resistor values (in standard resistor values): R1, R2, and RE in the above circuit.
+    b. Verify the specifics with your selected standard resistor values. Sketch the load line with IBQ curve and quiescent point indicated.
+    c. What is the maximum DC voltage swing (up and down) of VE from VEQ base on your design?
+
+
+8. In the following current mirror circuits, BJT T1 and T2 are with matching characteristics, Beta = 100.
+    a. For Vcc=15V and R=5.1KΩ, find the mirror current IL and the IB1. Draw the load line of transistor T1 with IB curve.
+    b. If we want the mirror current IL=4mA, select R value (standard value) to realize the specification. Draw the load line of transistor T1 with IB curve.
+    c. For your design in part b., if a load resistor of 1KΩ connected between the collector of T2 and a 10V DC source, find Vce of T2 and locate the operation point on the load line.
+    d. In the same circuit of part b., if a load resistor of 2.7KΩ connected between the collector of T2 and a 10V DC source, can the circuit still maintain IL=4mA? Explain. (Tip: check Vce of T2.)
+
+
+9. In the following current source circuit, D1 is a Zener diode with Vz=5.1V and maintenance current 4mA. Vcc=15V in the circuit. The BJT is 2N3904 with 
+    a. Find the resistor values (standard value) of R1 and RE such that the circuit provides a current source of 8mA.
+    b. In the current source circuit, if a load resistor of 1.2KΩ connected between the collector and a 20V DC source, can the circuit still maintain IL=8mA? Explain. (Tip: Check for Vce.)
+    c. What is the highest load resistor value for the current source to sink 8mA with a 20V DC source?
+
+
+***********************************************************************************************************************************************
+Some answer keys:
+1a. ICQ=2.3mA and VCEQ=6.3V
+1b. VCQ=8.7V
+1c. ICQ=2.7mA (+16%) and VCEQ=4.9V (-22%)
+1d. VCQ=7.6V
+2a. RB=750KΩ, RC=2KΩ, and RE=2.4KΩ
+2b. ICQ=1.4mA and VCEQ=8.6V
+2c. VCQ=12.1V, it swings from 3.7V to ≈15V, that is, −8.4V to +2.9V swing.
+3a. VB=2.7V
+3c. Vth=2.62V, Rth=7.5KΩ
+3d. Actual VB=2.437V and percentage of difference −9.7%
+3e. R1=47KΩ and R2=10KΩ
+3f. Vth=2.63 and Rth=8.2KΩ; Actual VB=2.431V and percentage of difference −9.9% 4a. ICQ=1.5mA and VCEQ=8V
+4b. VCQ=9.7V and VEQ=1.76V
+5a. R1=24KΩ, R2= 18KΩ, RC=1.5KΩ, and RE=2KΩ
+5b. Verify: ICQ=2.9mA and VCEQ=5V
+5c. VCQ=10.7V, −4V to +4.3V swing
+6a. ICQ=3.4mA and VCEQ=8.2V
+6b. VEQ=6.8V, VE can swing from 0V to 14.8V.
+7a. Select VEQ=5V leads to RE=2.4KΩ, R2=18KΩ, and R1=30KΩ
+7b. Verify ICQ=2.05mA and VEQ=4.9V
+8b. R=3.6KΩ
+9a. R1=2KΩ (or other choices), RE=560Ω
