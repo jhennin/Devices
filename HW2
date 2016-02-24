@@ -39,3 +39,87 @@ Semiconductor Materials and Diode v-I relationship:
 	6d) rd=14.5KΩ, 626.7Ω, and 34.3Ω at −2oC, 25oC, and 55oC respectively (VD=0.7V)
 	7) rd=2.59Ω, 1.73Ω, and 0.26Ω for ID=10mA, 15mA and 100mA respectively (T=27 oC)
 	8) VD=1.12V, 0.89V, and 0.75V at −20oC, 27oC, and 55oC respectively for a constant ID=5mA.
+
+
+********************************************************************************************************
+% Exercise Package 2 - Problem #6
+
+% Calculate gamma
+clear g
+syms g
+
+Tk = 273 + -2; % change temp value for question 6c
+k = 1.38 .* power(10, -23);
+Eg = 1.1 .* (1.6 .* power(10, -19));
+Is = 1000;
+
+eqn = Is == (Tk^(3 + (g./2))) .* exp(-Eg./(k.*Tk));
+
+soluG = solve(eqn, g);
+g = vpa(soluG)
+
+% Calculate Id
+Vd = .7;
+n = 2;
+q = 1.6 .* power(10, -19);
+Vt = k .* (Tk ./ q) 
+
+Id = Is .* ((exp(Vd ./ (n .* Vt))) - 1);
+
+rd = (n .* Vt) ./ Id
+
+********************************************************************************************************
+% Exercise Package 2 - Problem #7
+
+Tk = 300;
+n = 1;
+q = 1.6 .* power(10, -19);
+k = 1.38 .* power(10, -23);
+Id1 = 10;
+Id2 = 15;
+Id3 = 100;
+
+Vt = k .* (Tk ./ q);
+
+Rd1 = (n .* Vt) ./ Id1
+Rd2 = (n .* Vt) ./ Id2
+Rd3 = (n .* Vt) ./ Id3
+********************************************************************************************************
+
+% Exercise Package 2 - Problem #8
+
+g = 1;
+k = 1.38 .* power(10, -23);
+Eg = 1.1 .* (1.6 .* power(10, -19));
+q = 1.6 .* power(10, -19);
+Tk1 = 273 + -20;
+Tk2 = 273 + 27;
+Tk3 = 273 + 55;
+Id = .005;
+n = 2;
+
+Is1 = (Tk1^(3 + (g./2))) .* exp(-Eg./(k.*Tk1));
+Is2 = (Tk1^(3 + (g./2))) .* exp(-Eg./(k.*Tk2));
+Is3 = (Tk1^(3 + (g./2))) .* exp(-Eg./(k.*Tk3));
+
+Vt1 = k .* (Tk1 ./ q);
+Vt2 = k .* (Tk2 ./ q);
+Vt3 = k .* (Tk3 ./ q);
+
+clear Vd1
+syms Vd1
+eqn1 = Id == Is1 .* ((exp(Vd1 ./ (n .* Vt1))) - 1);
+soluVd1 = solve(eqn1, Vd1);
+Vd1 = vpa(soluVd1)
+
+clear Vd2
+syms Vd2
+eqn2 = Id == Is2 .* ((exp(Vd2 ./ (n .* Vt2))) - 1);
+soluVd2 = solve(eqn2, Vd2);
+Vd2 = vpa(soluVd2)
+
+clear Vd3
+syms Vd3
+eqn3 = Id == Is3 .* ((exp(Vd3 ./ (n .* Vt3))) - 1);
+soluVd3 = solve(eqn3, Vd3);
+Vd3 = vpa(soluVd3)
